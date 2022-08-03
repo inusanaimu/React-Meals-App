@@ -9,7 +9,7 @@ function Header(props) {
     <>
       <header className={classess.header}>
         <h1>ReactMeals</h1>
-        <HeaderCartButton />
+        <HeaderCartButton onClick={props.onToggleCart} />
       </header>
       <div className={classess['main-image']}>
         <img src={mealsImage} alt='A table full of delicioud foods' />
